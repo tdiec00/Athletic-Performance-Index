@@ -149,7 +149,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ### Strengths:
 
-Javascript functions and component functionality.
+Javascript functions and react component functionality.
 
 ### Weaknesses:
 
