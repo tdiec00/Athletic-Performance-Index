@@ -10,10 +10,11 @@ This application provides a list of exercises, broken up by different body parts
 
 ## Wireframes
 
-![Wire frame phone](./images/wire-frame.png)
+
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+
+![Wire frame phone](./images/wire-frame.png)
 
 ## API and Data Sample
 
