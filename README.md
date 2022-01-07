@@ -103,21 +103,21 @@ This application provides a list of exercises, broken up by different body parts
 ```
 
 ### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Create Air Table Api for exercises 
+- All routes/endpoints are functional
+- All endpoints have styled and displayable data
+- Functional Favorites Lists page
+- Functional tracker that tracks, posts, and displays information
+- Navbar with all neccesary routes
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Hover over effects with pictures for each section on home page
+- Better organizational tracker system broken down weekly or monthly
+- Additional Styling
+- Descriptions for exercises or links to description or video of exercises
 
 ## Project Schedule
 
@@ -149,8 +149,16 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ### Strengths:
 
+Javascript functions and component functionality.
+
 ### Weaknesses:
+
+Css styling.
 
 ### Opportunities:
 
+Creating a fully functional and reactive react application.
+
 ### Threats:
+
+Not having a visually attractive application.
