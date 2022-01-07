@@ -18,40 +18,87 @@ This application provides a list of exercises, broken up by different body parts
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
-
 ```json
+{
+     "records": [
+        {
+            "id": "recgfSjfz885Cki0A",
+            "fields": {},
+            "createdTime": "2022-01-07T16:19:10.000Z"
+        },
+        {
+            "id": "recd5ovGw8yBphJ4c",
+            "fields": {},
+            "createdTime": "2022-01-07T16:19:10.000Z"
+        },
+        {
+            "id": "recea4Kr1sLU8If9W",
+            "fields": {},
+            "createdTime": "2022-01-07T16:19:10.000Z"
+        }
+    ],
+    "offset": "itr0ZLWKQv1au5i7Y/recea4Kr1sLU8If9W"
+}
 {
     "records": [
         {
-            "id": "recONRzIUTuZ5lXaF",
-            "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "id": "recdf3lFxdfXE4gae",
+            "fields": {},
+            "createdTime": "2022-01-07T16:18:02.000Z"
         },
         {
-            "id": "rec3oYZ5Tp0AIDsKe",
-            "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "id": "recGPBC16NKfQ2GWt",
+            "fields": {},
+            "createdTime": "2022-01-07T16:18:02.000Z"
         },
         {
-            "id": "recA34tOaoE1IVeC1",
-            "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "id": "recQUzabuiH6JSIQC",
+            "fields": {},
+            "createdTime": "2022-01-07T16:18:02.000Z"
         }
     ],
-    "offset": "recA34tOaoE1IVeC1"
+    "offset": "itr0ZLWKQv1au5i7Y/recQUzabuiH6JSIQC"
+}
+{
+   "records": [
+        {
+            "id": "recJDIbj7SCUrUgU9",
+            "fields": {
+                "back": "Deadlifts",
+                "chest": "Flat Bench",
+                "shoulders": "Military Press",
+                "biceps": "Curls",
+                "triceps": "Skull Crusher",
+                "legs": "Leg Presses"
+            },
+            "createdTime": "2022-01-07T16:09:02.000Z"
+        },
+        {
+            "id": "recuarsmwyTwY2hBN",
+            "fields": {
+                "back": "Cable Rows",
+                "chest": "Incline bench",
+                "shoulders": "Front Raises",
+                "biceps": "Hammer Curls",
+                "triceps": "Tricep Pull Downs",
+                "legs": "Squats"
+            },
+            "createdTime": "2022-01-07T16:09:02.000Z"
+        },
+        {
+            "id": "recDXbG7onDHDtnPU",
+            "fields": {
+                "back": "Bent Over Rows",
+                "chest": "Decline Bench",
+                "shoulders": "Side Raises",
+                "biceps": "Preacher Curls",
+                "triceps": "Close Grip Benching",
+                "legs": "Box Squats"
+            },
+            "createdTime": "2022-01-07T16:09:02.000Z"
+        }
+    ],
+    "offset": "itrMGr6yXKRcaT4iO/recDXbG7onDHDtnPU"
 }
 ```
 
