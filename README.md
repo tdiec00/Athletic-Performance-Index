@@ -22,28 +22,10 @@ This application provides a list of exercises, broken up by different body parts
 {
      "records": [
         {
-            "id": "recgfSjfz885Cki0A",
-            "fields": {},
-            "createdTime": "2022-01-07T16:19:10.000Z"
-        },
-        {
-            "id": "recd5ovGw8yBphJ4c",
-            "fields": {},
-            "createdTime": "2022-01-07T16:19:10.000Z"
-        },
-        {
-            "id": "recea4Kr1sLU8If9W",
-            "fields": {},
-            "createdTime": "2022-01-07T16:19:10.000Z"
-        }
-    ],
-    "offset": "itr0ZLWKQv1au5i7Y/recea4Kr1sLU8If9W"
-}
-{
-    "records": [
-        {
             "id": "recdf3lFxdfXE4gae",
-            "fields": {},
+            "fields": {
+                "name": "Bench Press"
+            },
             "createdTime": "2022-01-07T16:18:02.000Z"
         },
         {
@@ -57,7 +39,33 @@ This application provides a list of exercises, broken up by different body parts
             "createdTime": "2022-01-07T16:18:02.000Z"
         }
     ],
-    "offset": "itr0ZLWKQv1au5i7Y/recQUzabuiH6JSIQC"
+    "offset": "itr9oERfR2Lzff81T/recQUzabuiH6JSIQC"
+}
+}
+{
+     "records": [
+        {
+            "id": "recgfSjfz885Cki0A",
+            "fields": {
+                "excercise": "Curls",
+                "date": "2022-01-01",
+                "sets": 4,
+                "reps": 10
+            },
+            "createdTime": "2022-01-07T16:19:10.000Z"
+        },
+        {
+            "id": "recd5ovGw8yBphJ4c",
+            "fields": {},
+            "createdTime": "2022-01-07T16:19:10.000Z"
+        },
+        {
+            "id": "recea4Kr1sLU8If9W",
+            "fields": {},
+            "createdTime": "2022-01-07T16:19:10.000Z"
+        }
+    ],
+    "offset": "itr9oERfR2Lzff81T/recea4Kr1sLU8If9W"
 }
 {
    "records": [
@@ -108,7 +116,6 @@ This application provides a list of exercises, broken up by different body parts
 - Create Air Table Api for exercises 
 - All routes/endpoints are functional
 - All endpoints have styled and displayable data
-- Functional Favorites Lists page
 - Functional tracker that tracks, posts, and displays information
 - Navbar with all neccesary routes
 
@@ -118,6 +125,8 @@ This application provides a list of exercises, broken up by different body parts
 - Better organizational tracker system broken down by weekly or monthly
 - Additional Styling
 - Descriptions for exercises or links to description or video of exercises
+- Favorites button on link after clicking exercise link to description of exercise
+- Functional Favorites Lists page
 
 ## Project Schedule
 
