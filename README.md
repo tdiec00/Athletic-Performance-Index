@@ -9,12 +9,13 @@ Athletic Performance Index (API)
 This application provides a list of exercises, broken up by different body parts, allows the user to add specific exercises to a favorites list, and track previous exercises and frequencies. 
 
 ## Wireframes
+![Desktop wire frame](./images/desktop.png)
 
-
+![Mobile wire frame](./image/mobile.png)
 
 ## Component Hierarchy
 
-![Wire frame phone](./images/wire-frame.png)
+![Component Hierarchy](./images/component-hierarchy.png)
 
 ## API and Data Sample
 
