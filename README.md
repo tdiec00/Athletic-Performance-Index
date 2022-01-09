@@ -126,7 +126,7 @@ This application provides a list of exercises, broken up by different body parts
 - Better organizational tracker system broken down by weekly or monthly
 - Additional Styling
 - Descriptions for exercises or links to description or video of exercises
-- Favorites button on link after clicking exercise link to description of exercise
+- Favorites button on page after clicking link to description of exercise
 - Functional Favorites Lists page
 
 ## Project Schedule
@@ -145,9 +145,6 @@ This schedule will be used to keep track of your progress throughout the week an
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all parts of your app.  Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -169,7 +166,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Add to tracker form| H | 3hrs|  |  |
 | Add new exercise route/button| H | 3hrs|  |  |
 | Update button on tracker| H | 3hrs|  |  |
-| Total | H | 53hrs|  | |
+| Descriptions for exercises| H | 4hrs|  |  |
+| Favorites button| H | 3hrs|  |  |
+| Fetching favorites page data| H | 3hrs|  |  |
+| Styling favorites page| H | 4hrs|  |  |
+| Total | H | 67hrs|  | |
 
 ## SWOT Analysis
 
