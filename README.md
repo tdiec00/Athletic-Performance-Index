@@ -135,7 +135,7 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |July 13| Project Approval | Incomplete
 |July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |July 14| Pseudocode / actual code | Incomplete
@@ -151,9 +151,25 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Navbar Routes | H | 1hr|  |  |
+| Fetching homepage data | H | 2hr| | |
+| Display homepage data | H | 2hrs|  |  |
+| Styling for homepage | H | 4hrs|  |  |
+| Routes for each bodypart | H | 2hrs|  |  |
+| Fetching for each body part | L | 4hrs|  |  |
+| Display for each body part | H | 4hrs|  |  |
+| Styling for each body part page | H | 4hrs|  |  |
+| Fetching data for personal tracker home page| H | 3hrs|  |  |
+| Display data for personal tracker home page| H | 3hrs|  |  |
+| Styling for personal tracker home page| H | 4hrs|  |  |
+| Fetching data for exercise specific tracker| H | 2hrs|  |  |
+| Display data for exercise specific tracker| H | 2hrs|  |  |
+| Styling for exercise specific tracker| H | 4hrs|  |  |
+| Add to tracker route/button| H | 3hrs|  |  |
+| Add to tracker form| H | 3hrs|  |  |
+| Add new exercise route/button| H | 3hrs|  |  |
+| Update button on tracker| H | 3hrs|  |  |
+| Total | H | 53hrs|  | |
 
 ## SWOT Analysis
 
