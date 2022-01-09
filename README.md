@@ -115,7 +115,7 @@ This application provides a list of exercises, broken up by different body parts
 #### PostMVP  
 
 - Hover over effects with pictures for each section on home page
-- Better organizational tracker system broken down weekly or monthly
+- Better organizational tracker system broken down by weekly or monthly
 - Additional Styling
 - Descriptions for exercises or links to description or video of exercises
 
