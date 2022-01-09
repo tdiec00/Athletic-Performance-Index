@@ -11,7 +11,7 @@ This application provides a list of exercises, broken up by different body parts
 ## Wireframes
 ![Desktop wire frame](./images/desktop.png)
 
-![Mobile wire frame](./image/mobile.png)
+![Mobile wire frame](./images/mobile.png)
 
 ## Component Hierarchy
 
