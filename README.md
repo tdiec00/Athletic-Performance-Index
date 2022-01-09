@@ -188,4 +188,4 @@ Creating a fully functional and reactive react application.
 
 ### Threats:
 
-Not having a visually attractive application.
+Getting all the components and styling completed on time for presentation.
