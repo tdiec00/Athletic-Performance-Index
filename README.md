@@ -139,7 +139,7 @@ This schedule will be used to keep track of your progress throughout the week an
 |Top 5 display for each body part| L | 4hrs|  |  |
 |Top 5 display for home page| L | 4hrs|  |  |
 |Style top 5 display| L | 4hrs|  |  |
-| Total | H | 67hrs|  | |
+| Total | H | 49hrs|  | |
 
 ## SWOT Analysis
 
