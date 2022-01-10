@@ -43,31 +43,6 @@ This application provides a list of exercises, broken up by different body parts
     "offset": "itr9oERfR2Lzff81T/recQUzabuiH6JSIQC"
 }
 {
-     "records": [
-        {
-            "id": "recgfSjfz885Cki0A",
-            "fields": {
-                "excercise": "Curls",
-                "date": "2022-01-01",
-                "sets": 4,
-                "reps": 10
-            },
-            "createdTime": "2022-01-07T16:19:10.000Z"
-        },
-        {
-            "id": "recd5ovGw8yBphJ4c",
-            "fields": {},
-            "createdTime": "2022-01-07T16:19:10.000Z"
-        },
-        {
-            "id": "recea4Kr1sLU8If9W",
-            "fields": {},
-            "createdTime": "2022-01-07T16:19:10.000Z"
-        }
-    ],
-    "offset": "itr9oERfR2Lzff81T/recea4Kr1sLU8If9W"
-}
-{
    "records": [
         {
             "id": "recJDIbj7SCUrUgU9",
@@ -116,17 +91,18 @@ This application provides a list of exercises, broken up by different body parts
 - Create Air Table Api for exercises 
 - All routes/endpoints are functional
 - All endpoints have styled and displayable data
-- Functional tracker that tracks, posts, and displays information
-- Navbar with all neccesary routes
+- Diplay data for each body part
+- Update button
+- Form to submit new exercise
+- Descriptions for exercises or links to description or video of exercises
 
 #### PostMVP  
 
-- Hover over effects with pictures for each section on home page
-- Better organizational tracker system broken down by weekly or monthly
+- Likes button functionality for exercises
+- Top 5 liked section for each body part
 - Additional Styling
-- Descriptions for exercises or links to description or video of exercises
-- Favorites button on page after clicking link to description of exercise
-- Functional Favorites Lists page
+- Top 5 like exercises all time on home page
+- Restyle top 5 display form
 
 ## Project Schedule
 
@@ -152,23 +128,17 @@ This schedule will be used to keep track of your progress throughout the week an
 | Display homepage data | H | 2hrs|  |  |
 | Styling for homepage | H | 4hrs|  |  |
 | Routes for each bodypart | H | 2hrs|  |  |
-| Fetching for each body part | L | 4hrs|  |  |
+| Fetching for each body part | H | 4hrs|  |  |
 | Display for each body part | H | 4hrs|  |  |
 | Styling for each body part page | H | 4hrs|  |  |
-| Fetching data for personal tracker home page| H | 3hrs|  |  |
-| Display data for personal tracker home page| H | 3hrs|  |  |
-| Styling for personal tracker home page| H | 4hrs|  |  |
-| Fetching data for exercise specific tracker| H | 2hrs|  |  |
-| Display data for exercise specific tracker| H | 2hrs|  |  |
-| Styling for exercise specific tracker| H | 4hrs|  |  |
-| Add to tracker route/button| H | 3hrs|  |  |
-| Add to tracker form| H | 3hrs|  |  |
-| Add new exercise route/button| H | 3hrs|  |  |
-| Update button on tracker| H | 3hrs|  |  |
-| Descriptions for exercises| L | 4hrs|  |  |
-| Favorites button| M | 3hrs|  |  |
-| Fetching favorites page data| M | 3hrs|  |  |
-| Styling favorites page| L | 4hrs|  |  |
+| Add new exercise button| H | 2hrs|  |  |
+| Form for new exercise| H | 3hrs|  |  |
+| Styling for new exercise form| H | 3hrs|  |  |
+| Likes button| H | 3hrs|  |  |
+| Increment likes component| H | 3hrs|  |  |
+|Top 5 display for each body part| L | 4hrs|  |  |
+|Top 5 display for home page| L | 4hrs|  |  |
+|Style top 5 display| L | 4hrs|  |  |
 | Total | H | 67hrs|  | |
 
 ## SWOT Analysis
