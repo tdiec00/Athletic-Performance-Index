@@ -165,10 +165,10 @@ This schedule will be used to keep track of your progress throughout the week an
 | Add to tracker form| H | 3hrs|  |  |
 | Add new exercise route/button| H | 3hrs|  |  |
 | Update button on tracker| H | 3hrs|  |  |
-| Descriptions for exercises| H | 4hrs|  |  |
-| Favorites button| H | 3hrs|  |  |
-| Fetching favorites page data| H | 3hrs|  |  |
-| Styling favorites page| H | 4hrs|  |  |
+| Descriptions for exercises| L | 4hrs|  |  |
+| Favorites button| M | 3hrs|  |  |
+| Fetching favorites page data| M | 3hrs|  |  |
+| Styling favorites page| L | 4hrs|  |  |
 | Total | H | 67hrs|  | |
 
 ## SWOT Analysis
