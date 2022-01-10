@@ -42,7 +42,6 @@ This application provides a list of exercises, broken up by different body parts
     ],
     "offset": "itr9oERfR2Lzff81T/recQUzabuiH6JSIQC"
 }
-}
 {
      "records": [
         {
