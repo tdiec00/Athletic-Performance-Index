@@ -1,34 +1,45 @@
-import Form from 'react-bootstrap/Form'
 
-const NewForm = ({ input, handleInput, handleSubmit, setBodyPart }) => {
+
+const NewForm = ({ input, handleInput, handleSubmit, handleBodyInput }) => {
+
+  const { name, description, bodyPart } = input;
+
   return (
-    <div>
-      <Form>
-        <Form.Label>Body part</Form.Label>
+    
+    <>
+      <label>Choose a body part</label>
+      <br />
+      <select id="bodyPart" value={bodyPart} onChange={handleBodyInput}>
+        <option>List of body Parts</option>
+        <option>Bicep</option>
+        <option>Tricep</option>
+        <option>Legs</option>
+        <option>Chest</option>
+        <option>Shoulder</option>
+        <option>Back</option>
+      </select>
+      <br />
+      <form onSubmit={handleSubmit}>
+        <label>Name of exercise</label>
         <br />
-        <select onChange={event => setBodyPart(event.target.value) }>
-          <option>Bicep</option>
-          <option>Tricep</option>
-          <option>Legs</option>
-          <option>Chest</option>
-          <option>Shoulder</option>
-          <option>Back</option>
-        </select>
+        <input
+          id="name"
+          value={name}
+          onChange={handleInput}
+        ></input>
         <br />
-        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label>Exercise Name</Form.Label>
-          <br />
-          <Form.Control />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Description</Form.Label>
-          <br />
-          <Form.Control as="textarea" rows={6} />
-        </Form.Group>
+        <label>Description of exercise</label>
+        <br />
+        <input
+          id="description"
+          value={description}
+          onChange={handleInput}
+        ></input>
+        <br />
         <button>Submit</button>
-      </Form>
-    </div>
+      </form>
+    </>
+    
   )
 };
-
 export default NewForm

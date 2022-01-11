@@ -16,23 +16,42 @@ const NewExercise = () => {
   const [input, setInput] = useState(default_input);
   const [bodyPart, setBodyPart] = useState("");
 
+
   if (bodyPart === "back") {
-    setBodyPart(backApi)
+    // setBodyPart(backApi)
+    bodyPart = backApi
   } else if (bodyPart === "legs") {
-    setBodyPart(legsApi)
+    // setBodyPart(legsApi)
+    bodyPart = legsApi
   } else if (bodyPart=== "biceps") {
-    setBodyPart(bicepsApi)
+    // setBodyPart(bicepsApi)
+    bodyPart = bicepsApi
   } else if (bodyPart === "shoulders") {
-    setBodyPart(shouldersApi)
+    // setBodyPart(shouldersApi)
+    bodyPart = shouldersApi
   } else if (bodyPart === "chest") {
-    setBodyPart(chestApi)
+    // setBodyPart(chestApi)
+    bodyPart = chestApi
   } else if (bodyPart === "triceps") {
-    setBodyPart(tricepsApi)
+    // setBodyPart(tricepsApi)
+    bodyPart = tricepsApi
   } else {}
 
+  console.log( bodyPart );
+
   const handleInput = (event) => {
+    event.preventDefault();
     const { id, value } = event.target;
     setInput((prevInput) => ({
+      ...prevInput,
+      [id]: value,
+    }));
+  };
+
+  const handleBodyInput = (event) => {
+    event.preventDefault();
+    const { id, value } = event.target;
+    setBodyPart((prevInput) => ({
       ...prevInput,
       [id]: value,
     }));
@@ -53,6 +72,7 @@ const NewExercise = () => {
         handleInput={handleInput}
         handleSubmit={handleSubmit}
         setBodyPart={setBodyPart}
+        handleBodyInput={handleBodyInput}
       />
     </div>
   )
