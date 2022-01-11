@@ -1,18 +1,23 @@
 import { StyledNavbar } from './styles/Navbar.styled';
+import HamburgerMenu from './HamburgerMenu';
 import { StyledNavbarLink } from './styles/NavbarLink.styled';
 
 const Navbar = () => {
   return (
-    <StyledNavbar>
-      <StyledNavbarLink to="/">Home Page</StyledNavbarLink>
+    <div>
+      <StyledNavbar>
+        <HamburgerMenu />
+        {/* <StyledNavbarLink to="/">Home Page</StyledNavbarLink>
       <StyledNavbarLink to="/biceps">Biceps</StyledNavbarLink>
       <StyledNavbarLink to="/triceps">Triceps</StyledNavbarLink>
       <StyledNavbarLink to="/legs">Legs</StyledNavbarLink>
       <StyledNavbarLink to="/back">Back</StyledNavbarLink>
       <StyledNavbarLink to="/chest">Chest</StyledNavbarLink>
       <StyledNavbarLink to="/shoulders">Shoulders</StyledNavbarLink>
-    </StyledNavbar>
-  )
+      <StyledNavbarLink to="/new">Add New Exercise</StyledNavbarLink> */}
+      </StyledNavbar>
+    </div>
+  );
 };
 
 export default Navbar
