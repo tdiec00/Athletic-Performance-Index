@@ -47,16 +47,18 @@ const NewForm = ({ input, handleInput, handleSubmit, handleBodyInput }) => {
             </StyledFormInput>
             <br />
             <StyledFormInputBox3>
-              <input
+              <textarea
                 id="description"
                 value={description}
                 onChange={handleInput}
-              ></input>
+                cols="40"
+                rows="7"
+              ></textarea>
             </StyledFormInputBox3>
             <br />
-              <StyledSubmitButton>
-                <button>Submit</button>
-              </StyledSubmitButton>
+            <StyledSubmitButton>
+              <button>Submit</button>
+            </StyledSubmitButton>
           </form>
         </StyledForm>
       </StyledFormContainer>

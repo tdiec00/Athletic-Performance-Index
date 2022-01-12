@@ -12,4 +12,13 @@ label{
   color: white;
   font-size: 30px;
 }
+
+@media (max-width: 600px){
+width: 90%;
+
+label{
+  font-size: 20px;
+}
+
+}
 `
