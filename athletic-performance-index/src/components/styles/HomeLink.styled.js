@@ -5,4 +5,5 @@ export const StyledHomeLink = styled(Link)`
 text-decoration: none ;
 color: black;
 font-size: 30px;
+
 `

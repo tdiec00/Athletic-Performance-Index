@@ -9,30 +9,38 @@ import { useParams } from 'react-router-dom';
 import { StyledDataLink } from './styles/DataLink.styled';
 import { StyledBodyPartPageContainer } from './styles/BodyPartPageContainer.styled';
 import { StyledBodyPartDescriptionContainer } from './styles/BodyPartDescriptionContainer.styled';
+;
 
 const DisplayBody = () => {
   const [exercises, setExercises] = useState([]);
   let { name } = useParams();
   let nameID = ""
-
+  let nameH1 = "";
+  
   if (name === "back") {
     name = backApi
     nameID = "back"
+    nameH1 = "Back"
   } else if (name === "legs") {
     name = legsApi
     nameID = "legs"
+    nameH1 = "Legs"
   } else if (name === "biceps") {
     name = bicepsApi
     nameID = "biceps"
+    nameH1 = "Biceps"
   } else if (name === "shoulders") {
     name = shouldersApi
     nameID = "shoulders"
+    nameH1 = "Shoulders"
   } else if (name === "chest") {
     name = chestApi
     nameID = "chest"
+    nameH1 = "Chest"
   } else if (name === "triceps") {
     name = tricepsApi
     nameID = "triceps"
+    nameH1 = "Triceps"
   } else { };
 
   
@@ -46,7 +54,7 @@ const DisplayBody = () => {
 
   return (
     <div>
-      <h1>Bicep Index</h1>
+      <h1>{`${nameH1} Index`}</h1>
       <StyledBodyPartPageContainer>
         {exercises.map((exercise) => {
           return (

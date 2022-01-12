@@ -8,4 +8,8 @@ border-radius: 10px;
 text-align: center;
 background-color: white;
 box-shadow: 10px 10px black ;
+
+&:hover{
+  transform: scale(1.5);
+}
 `

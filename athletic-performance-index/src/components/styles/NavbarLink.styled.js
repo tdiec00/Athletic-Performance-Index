@@ -5,7 +5,8 @@ export const StyledNavbarLink = styled(Link)`
 color: white;
 text-decoration: none;
 
-@media (min-width: 800px){
+
+@media (min-width: 850px){
 padding: 20px;
 }
 `

@@ -1,10 +1,14 @@
 import { StyledHomeLink } from './styles/HomeLink.styled';
 import { StyledBodyPartContainer } from './styles/BodyPartContainer.styled';
-import { StyledHomeContainer, StyleHomeContainer } from './styles/HomeContainer.styled';
+import { StyleHomeContainer } from './styles/HomeContainer.styled';
+import { StyledH2Container } from './styles/H2Container.styled';
+
 const DisplayHome = () => {
   return (
     <>
-      <h2> Welcome to Athletic Performance Index. Explore our various lists of exercises.</h2>
+      <StyledH2Container>
+        <h2> Welcome to Athletic Performance Index. Explore our various lists of exercises.</h2>
+      </StyledH2Container>
       <StyleHomeContainer>
         <StyledBodyPartContainer>
           <StyledHomeLink to="/biceps">Biceps Exercises</StyledHomeLink>
@@ -32,7 +36,6 @@ const DisplayHome = () => {
           <StyledHomeLink to="/shoulders">Shoulder Exercises</StyledHomeLink>
         </StyledBodyPartContainer>
       </StyleHomeContainer>
-      <br />
     </>
   );
 };

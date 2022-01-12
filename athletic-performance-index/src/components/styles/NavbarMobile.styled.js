@@ -4,7 +4,7 @@ export const StyledNavbarMobile = styled.div`
 background-color: #181818;
 display: none;
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 display: flex;
 align-items: center;
 height: 60px;

@@ -4,7 +4,12 @@ export const StyledHamburger = styled.div`
 cursor: pointer;
 background-color: #181818;
 
-@media (min-width: 800px){
+&:hover{
+  transform: scale(1.15);
+}
+
+
+@media (min-width: 850px){
 display: none;
 }
 `

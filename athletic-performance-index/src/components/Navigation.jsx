@@ -2,7 +2,7 @@ import NavigationLinks from "./NavigationLinks"
 
 const Navigation = () => {
   return (
-        <NavigationLinks />
+       <NavigationLinks />
   );
 }
 

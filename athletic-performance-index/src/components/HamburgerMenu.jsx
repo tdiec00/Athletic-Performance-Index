@@ -1,10 +1,9 @@
 import { fallDown as Menu } from 'react-burger-menu';
 import { StyledNavbarLink } from './styles/NavbarLink.styled'
-import { StyledHamburgerMenu } from './styles/HamburgerMenu.styled';
+
 
 const HamburgerMenu = () => {
   return (
-    <StyledHamburgerMenu>
       <Menu>
       <StyledNavbarLink to="/">Home Page</StyledNavbarLink>
       <StyledNavbarLink to="/biceps">Biceps</StyledNavbarLink>
@@ -15,7 +14,6 @@ const HamburgerMenu = () => {
       <StyledNavbarLink to="/shoulders">Shoulders</StyledNavbarLink>
       <StyledNavbarLink to="/new">Add New Exercise</StyledNavbarLink>
       </Menu>
-    </StyledHamburgerMenu>
   );
 };
 

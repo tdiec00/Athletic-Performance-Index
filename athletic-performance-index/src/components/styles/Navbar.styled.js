@@ -7,7 +7,7 @@ h1{
   font-size: 100px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
 display: flex;
 font-size: 20px;
 width: 100vw;
@@ -16,7 +16,22 @@ background-color: #181818;
 color: white;
 text-align: center;
 }
+
+ul{
+display: flex;
+justify-content: space-around;
+}
+
+ul a{
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+}
+
 ul a:hover{
-  color: red;
+  background-color:  rgb(216, 202, 6);
+  transform: scale(1.1);
 }
 `
