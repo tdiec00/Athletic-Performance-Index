@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom';
 import { StyledDataLink } from './styles/DataLink.styled';
 import { StyledBodyPartPageContainer } from './styles/BodyPartPageContainer.styled';
 import { StyledBodyPartDescriptionContainer } from './styles/BodyPartDescriptionContainer.styled';
-;
+import { StyledH1BodyContainer } from './styles/H1BodyContainer.styled';
 
 const DisplayBody = () => {
   const [exercises, setExercises] = useState([]);
@@ -54,7 +54,9 @@ const DisplayBody = () => {
 
   return (
     <div>
-      <h1>{`${nameH1} Index`}</h1>
+      <StyledH1BodyContainer>
+        <h1>{`${nameH1} Index`}</h1>
+      </StyledH1BodyContainer>
       <StyledBodyPartPageContainer>
         {exercises.map((exercise) => {
           return (

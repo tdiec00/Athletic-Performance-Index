@@ -10,9 +10,9 @@ const DisplayHome = () => {
         <h2> Welcome to Athletic Performance Index. Explore our various lists of exercises.</h2>
       </StyledH2Container>
       <StyleHomeContainer>
-        <StyledBodyPartContainer>
-          <StyledHomeLink to="/biceps">Biceps Exercises</StyledHomeLink>
-        </StyledBodyPartContainer>
+          <StyledBodyPartContainer>
+            <StyledHomeLink to="/biceps">Biceps Exercises</StyledHomeLink>
+          </StyledBodyPartContainer>
         <br />
         <StyledBodyPartContainer>
           <StyledHomeLink to="/triceps">Triceps Exercises</StyledHomeLink>

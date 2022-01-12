@@ -10,11 +10,11 @@ const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
 
   const color1 = (e) => {
-    e.target.style.color = 'yellow';
+    e.target.style.color = '  rgb(216, 202, 6)';
   }
   const color2 = (e) => {
     e.target.style.color = 'white';
-}
+  };
 
   const hamburgerIcon =
     <StyledHamburgerMenu>

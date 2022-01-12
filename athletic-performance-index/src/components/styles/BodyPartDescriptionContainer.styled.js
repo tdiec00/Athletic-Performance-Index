@@ -9,4 +9,8 @@ text-align: center;
 background-color: white;
 box-shadow: 10px 10px black ;
 margin: 20px;
+
+&:hover{
+  transform: scale(1.5);
+}
 `
