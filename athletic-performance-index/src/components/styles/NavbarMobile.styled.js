@@ -12,8 +12,8 @@ padding: 10px;
 
 p {
   color: white;
-  font-size: 20px;
-  margin-left: 30%;
+  font-size: 40px;
+  margin-left: calc(28%);
 }
 
 ul {
@@ -34,5 +34,11 @@ ul a:hover{
   color: red;
 }
 
+@media (max-width: 500px){
+p{
+font-size: 25px;
+margin-left: calc(20%);
+}
+}
 }
 `

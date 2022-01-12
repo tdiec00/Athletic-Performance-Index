@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const StyledNavbar = styled.div`
 display: none;
 
+h1{
+  font-size: 100px;
+}
 
 @media (min-width: 800px) {
 display: flex;
