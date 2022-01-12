@@ -6,8 +6,9 @@ import legsApi from '../services/apiConfig/legs';
 import shouldersApi from '../services/apiConfig/shoulders';
 import tricepsApi from '../services/apiConfig/triceps';
 import { useParams } from 'react-router-dom';
-import DisplayHome from './DisplayHome';
 import { StyledDataLink } from './styles/DataLink.styled';
+import { StyledBodyPartPageContainer } from './styles/BodyPartPageContainer.styled';
+import { StyledBodyPartDescriptionContainer } from './styles/BodyPartDescriptionContainer.styled';
 
 const DisplayBody = () => {
   const [exercises, setExercises] = useState([]);
@@ -45,10 +46,19 @@ const DisplayBody = () => {
 
   return (
     <div>
-      <DisplayHome />
-      {exercises.map((exercise) => {
-        return <StyledDataLink to={`/${nameID}/${exercise?.id}`}>{exercise.fields.name}</StyledDataLink>
-      })}
+      <h1>Bicep Index</h1>
+      <StyledBodyPartPageContainer>
+        {exercises.map((exercise) => {
+          return (
+            <StyledBodyPartDescriptionContainer>
+              <StyledDataLink to={`/${nameID}/${exercise?.id}`}>
+                <p>{exercise.fields.name}</p>
+                <p>{exercise.fields.description}</p>
+              </StyledDataLink>
+            </StyledBodyPartDescriptionContainer>
+          )
+        })}
+      </StyledBodyPartPageContainer>
     </div>
   );
 };

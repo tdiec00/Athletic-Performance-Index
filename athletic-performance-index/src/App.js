@@ -8,8 +8,7 @@ import NewExercise from './components/NewExercise';
 
 function App() {
   return (
-    <div id="outer-container">
-      <div id="page-wrap">
+    <>
         <Navbar/>
         <br/>
         <Routes>
@@ -23,8 +22,7 @@ function App() {
           <Route path="/:name/:id" element={<DisplayDescription />} />
           <Route path="/new" element={<NewExercise />} />
         </Routes>
-      </div>
-    </div>
+    </>
   );
 };
 

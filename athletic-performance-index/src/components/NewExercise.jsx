@@ -21,7 +21,7 @@ const NewExercise = () => {
     api = backApi;
   } else if (bodyPart.bodyPart === "Legs") {
     api = legsApi;
-  } else if (bodyPart.bodyPart=== "Bicep") {
+  } else if (bodyPart.bodyPart === "Bicep") {
     api = bicepsApi;
   } else if (bodyPart.bodyPart === "Shoulder") {
     api = shouldersApi;
@@ -30,8 +30,6 @@ const NewExercise = () => {
   } else if (bodyPart.bodyPart === "Tricep") {
     api = tricepsApi;
   } else { };
-
-  console.log(bodyPart.bodyPart);
 
   const handleInput = (event) => {
     event.preventDefault();
@@ -68,7 +66,6 @@ const NewExercise = () => {
         handleBodyInput={handleBodyInput}
       />
     </div>
-  )
-}
-
+  );
+};
 export default NewExercise

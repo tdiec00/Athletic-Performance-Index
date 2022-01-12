@@ -1,23 +1,40 @@
 import { StyledHomeLink } from './styles/HomeLink.styled';
-
+import { StyledBodyPartContainer } from './styles/BodyPartContainer.styled';
+import { StyledHomeContainer, StyleHomeContainer } from './styles/HomeContainer.styled';
 const DisplayHome = () => {
   return (
-    <div>
+    <>
       <h2> Welcome to Athletic Performance Index. Explore our various lists of exercises.</h2>
-      <StyledHomeLink to="/biceps">Biceps Exercises</StyledHomeLink>
-      <br/>
-      <StyledHomeLink to="/triceps">Triceps Exercises</StyledHomeLink>
-      <br/>
-      <StyledHomeLink to="/legs">Legs Exercises</StyledHomeLink>
-      <br/>
-      <StyledHomeLink to="/back">Back Exercises</StyledHomeLink>
-      <br/>
-      <StyledHomeLink to="/chest">Chest Exercises</StyledHomeLink>
-      <br/>
-      <StyledHomeLink to="/shoulders">Shoulder Exercises</StyledHomeLink>
+      <StyleHomeContainer>
+        <StyledBodyPartContainer>
+          <StyledHomeLink to="/biceps">Biceps Exercises</StyledHomeLink>
+        </StyledBodyPartContainer>
+        <br />
+        <StyledBodyPartContainer>
+          <StyledHomeLink to="/triceps">Triceps Exercises</StyledHomeLink>
+        </StyledBodyPartContainer>
+        <br />
+        <StyledBodyPartContainer>
+          <StyledHomeLink to="/legs">Legs Exercises</StyledHomeLink>
+        </StyledBodyPartContainer>
+      </StyleHomeContainer>
       <br />
-    </div>
-  )
-}
+      <StyleHomeContainer>
+        <StyledBodyPartContainer>
+          <StyledHomeLink to="/back">Back Exercises</StyledHomeLink>
+        </StyledBodyPartContainer>
+        <br />
+        <StyledBodyPartContainer>
+          <StyledHomeLink to="/chest">Chest Exercises</StyledHomeLink>
+        </StyledBodyPartContainer>
+        <br />
+        <StyledBodyPartContainer>
+          <StyledHomeLink to="/shoulders">Shoulder Exercises</StyledHomeLink>
+        </StyledBodyPartContainer>
+      </StyleHomeContainer>
+      <br />
+    </>
+  );
+};
 
 export default DisplayHome

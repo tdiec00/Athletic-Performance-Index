@@ -1,11 +1,36 @@
 import NavigationLinks from "./NavigationLinks"
-import { StyledNavbarLinkMobile } from "./styles/NavbarLinkMobile.styled";
+import { CgMenuRound } from 'react-icons/cg';
+import { StyledHamburger } from "./styles/Hamburger.styled";
+import { useState } from "react";
+import {RiCloseCircleFill} from 'react-icons/ri'
+
 
 const MobileNavigation = () => {
+
+  const [open, setOpen] = useState(false);
+  const hamburgerIcon = 
+    <CgMenuRound
+      size='40px'
+      color='white'
+      onClick={() => setOpen(!open)}
+    />
+  
+  const closeHamburgerIcon = 
+    <RiCloseCircleFill
+      size='40px'
+      color='white'
+      onClick={() => setOpen(!open)}
+    />
+  
+  const closeMobileMenu = () => setOpen(false);
+  
   return (
-    <StyledNavbarLinkMobile>
-      <NavigationLinks />
-    </StyledNavbarLinkMobile>
+      <nav>
+        <StyledHamburger>
+          {open ? closeHamburgerIcon : hamburgerIcon}
+        </StyledHamburger>
+        {open && <NavigationLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
+      </nav>
   );
 }
 

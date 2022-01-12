@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
+display: none;
+
+
+@media (min-width: 800px) {
 display: flex;
-background-color: black;
-height: 60px;
 font-size: 20px;
 width: 100vw;
 flex-direction: column;
-
-@media (min-width: 768px) {
-    flex-direction: row;
-  }
+background-color: #181818;
+color: white;
+text-align: center;
+}
+ul a:hover{
+  color: red;
+}
 `

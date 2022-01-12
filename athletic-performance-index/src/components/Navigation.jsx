@@ -2,8 +2,8 @@ import NavigationLinks from "./NavigationLinks"
 
 const Navigation = () => {
   return (
-    <NavigationLinks/>
-  )
+        <NavigationLinks />
+  );
 }
 
 export default Navigation

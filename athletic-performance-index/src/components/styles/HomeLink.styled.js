@@ -3,6 +3,6 @@ import { Link } from "react-router-dom";
 
 export const StyledHomeLink = styled(Link)`
 text-decoration: none ;
-color: Black;
+color: black;
 font-size: 30px;
 `
