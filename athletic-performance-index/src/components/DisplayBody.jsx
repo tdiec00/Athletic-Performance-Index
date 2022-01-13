@@ -14,6 +14,8 @@ import IncrementLikes from './IncrementLikes';
 
 const DisplayBody = () => {
   const [exercises, setExercises] = useState([]);
+  const [toggle, setToggle] = useState(false);
+
   let { name } = useParams();
   let nameID = ""
   let nameH1 = "";
@@ -51,7 +53,7 @@ const DisplayBody = () => {
       setExercises(res.data.records)
     }
     fetchExercises()
-  }, [name]);
+  }, [name, toggle]);
 
   return (
     <div>
@@ -65,7 +67,12 @@ const DisplayBody = () => {
               <StyledDataLink to={`/${nameID}/${exercise?.id}`}>
                 <p key={exercise.id}>{exercise.fields?.name}</p>
               </StyledDataLink>
-              <IncrementLikes id={exercise.id} like={exercise.fields?.likes} name={ name}/>
+              <IncrementLikes
+                id={exercise.id}
+                like={exercise.fields?.likes}
+                name={name}
+                setToggle={setToggle}
+              />
               <p key={exercise.id}>{exercise.fields?.likes}</p>
             </StyledBodyPartNameContainer>
           )
