@@ -3,30 +3,41 @@ import DisplayTopLikes from "./DisplayTopLikes";
 
 
 const SortLikes = ({ name }) => {
-  const [likes, setLikes] = useState({}); 
-
+  const [likes, setLikes] = useState([]); 
   let likeArr = [];
+  let sortedLikeArr = [];
+  let finalLikeArr = [];
 
-  // const sortLikes = () => {
-  //   likes.map((like) => {
-  //     likeArr.push(like.fields.likes)
-  //   });
-  // };
-  // sortLikes();
-  // console.log(likeArr);
   useEffect(() => {
     const fetchLikes = async () => {
       let res = await name.get();
       setLikes(res.data.records)
     }
-    fetchLikes()
-  }, []);
+    fetchLikes();
+  }, [name]);
 
-  console.log(likes);
+  const sortLikes = () => {
+    likes.map((like) => {
+      likeArr.push(like.fields.likes)
+    });
+  };
+  sortLikes();
+
+  const sortedLikes = () => {
+     return sortedLikeArr = likeArr.sort((a, b) => a - b);
+  }
+  sortedLikes(likeArr);
+
+  const top5Likes = () => {
+    finalLikeArr = sortedLikeArr.slice(0, 5);
+  }
+  top5Likes(sortedLikeArr);
 
   return (
-    <DisplayTopLikes/>
-  )
+    finalLikeArr.map((like) => {
+      <DisplayTopLikes like={like} />
+    })
+  );
 };
 
 export default SortLikes
