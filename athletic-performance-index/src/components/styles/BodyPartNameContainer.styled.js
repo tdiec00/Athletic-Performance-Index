@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledBodyPartNameContainer = styled.div`
 border: 3px solid black;
-height: 75px;
+height: 80px;
 width: 300px;
 border-radius: 10px;
 text-align: center;
@@ -37,6 +37,9 @@ p{
 margin-left: 10px;
 }
 a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
 }
 `

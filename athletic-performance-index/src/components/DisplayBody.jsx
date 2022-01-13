@@ -11,6 +11,7 @@ import { StyledBodyPartPageContainer } from './styles/BodyPartPageContainer.styl
 import { StyledH1BodyContainer } from './styles/H1BodyContainer.styled';
 import { StyledBodyPartNameContainer } from './styles/BodyPartNameContainer.styled';
 import IncrementLikes from './IncrementLikes';
+import SortLikes from './SortLikes';
 
 const DisplayBody = () => {
   const [exercises, setExercises] = useState([]);
@@ -78,6 +79,7 @@ const DisplayBody = () => {
           )
         })}
       </StyledBodyPartPageContainer>
+      <SortLikes name={name}/>
     </div>
   );
 };
