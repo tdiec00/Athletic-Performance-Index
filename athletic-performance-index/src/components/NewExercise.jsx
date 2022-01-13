@@ -10,13 +10,14 @@ import tricepsApi from '../services/apiConfig/triceps';
 const default_input = {
   name: "",
   description: "",
+  likes: 0,
 };
 
 const NewExercise = () => {
   const [input, setInput] = useState(default_input);
   const [bodyPart, setBodyPart] = useState("");
   let api = "";
-  
+
   if (bodyPart.bodyPart === "Back") {
     api = backApi;
   } else if (bodyPart.bodyPart === "Legs") {
@@ -29,8 +30,12 @@ const NewExercise = () => {
     api = chestApi;
   } else if (bodyPart.bodyPart === "Tricep") {
     api = tricepsApi;
-  } else { };
+  } else {
 
+  }
+   
+ 
+  console.log(bodyPart.bodyPart);
   const handleInput = (event) => {
     event.preventDefault();
     const { id, value } = event.target;
@@ -51,6 +56,9 @@ const NewExercise = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (bodyPart.bodyPart === undefined) {
+      alert("Please choose a body part");
+    }
     const fields = input;
     const res = await api.post("/", { fields });
     setInput(default_input);

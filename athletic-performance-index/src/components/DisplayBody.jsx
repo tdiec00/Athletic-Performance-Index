@@ -8,8 +8,9 @@ import tricepsApi from '../services/apiConfig/triceps';
 import { useParams } from 'react-router-dom';
 import { StyledDataLink } from './styles/DataLink.styled';
 import { StyledBodyPartPageContainer } from './styles/BodyPartPageContainer.styled';
-import { StyledBodyPartDescriptionContainer } from './styles/BodyPartDescriptionContainer.styled';
 import { StyledH1BodyContainer } from './styles/H1BodyContainer.styled';
+import { StyledBodyPartNameContainer } from './styles/BodyPartNameContainer.styled';
+import IncrementLikes from './IncrementLikes';
 
 const DisplayBody = () => {
   const [exercises, setExercises] = useState([]);
@@ -60,12 +61,13 @@ const DisplayBody = () => {
       <StyledBodyPartPageContainer>
         {exercises.map((exercise) => {
           return (
-            <StyledBodyPartDescriptionContainer>
+            <StyledBodyPartNameContainer>
               <StyledDataLink to={`/${nameID}/${exercise?.id}`}>
-                <p>{exercise.fields.name}</p>
-                <p>{exercise.fields.description}</p>
+                <p key={exercise.id}>{exercise.fields?.name}</p>
               </StyledDataLink>
-            </StyledBodyPartDescriptionContainer>
+              <IncrementLikes id={exercise.id} like={exercise.fields?.likes} name={ name}/>
+              <p key={exercise.id}>{exercise.fields?.likes}</p>
+            </StyledBodyPartNameContainer>
           )
         })}
       </StyledBodyPartPageContainer>
