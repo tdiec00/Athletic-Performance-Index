@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FcLike } from "react-icons/fc";
+import backApi from "../services/apiConfig/back";
 
 const default_input = {
   name: "",
@@ -7,38 +8,48 @@ const default_input = {
   likes: 0,
 };
 
-
-
-const IncrementLikes = ({id, like, name}) => {
+const IncrementLikes = ({ id, like, name }) => {
+  const [data, setData] = useState({});
   const [newLike, setNewLike] = useState(0);
-  const [input, setInput] = useState(default_input);
+  // const [input, setInput] = useState(default_input);
   const [currentId, setCurrentId] = useState("");
- 
-  let currentLikes = newLike;
+  
+
+  const newId = currentId
   
   const idHandler = () => {
+    like ++
+    setNewLike({likes: like })
     setCurrentId(id);
-    setNewLike(like);
+    updateLikes();
   }
-  console.log(newLike);
+ 
   useEffect(() => {
-    const fetchLikes = async () => {
-      let fields = input;
-      const res = await name.patch( `${id} `, { fields });
-      setInput(default_input);
+    const fetchData = async () => {
+    const res = await name.get(newId);
+    setData(res.data);
     }
-    fetchLikes()
-  }, [])
+    fetchData()
+  }, [newId]);
+  console.log(data);
+  console.log(newId);
+  console.log(newLike);
+  
+  const updateLikes = async () => {
+    const fields = newLike;
+      const res = await name.patch( `${id} `, { fields });
+    }
+    
+ 
   
 
 
 
   return (
-    <form onClick={idHandler}>
-      <button>
+
+      <button onClick={idHandler}>
         <FcLike />
       </button>
-    </form>
   );
 }
 
