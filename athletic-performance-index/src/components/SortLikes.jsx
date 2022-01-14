@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import DiplayTop5 from "./DiplayTop5";
+import DisplayTop5 from "./DisplayTop5";
 
 
 const SortLikes = ({ api }) => {
@@ -16,10 +16,6 @@ const SortLikes = ({ api }) => {
     }
     fetchLikes();
   }, [api]);
-
-
-   
-
 
   const sortLikes = () => {
     likes.map((like) => {
@@ -42,12 +38,13 @@ const SortLikes = ({ api }) => {
     finalLikeArr = sortedLikeArr.slice(0, 5);
   }
   top5Likes(sortedLikeArr);
-  console.log(finalLikeArr);
 
   return (
     <div>
       {finalLikeArr.map((like) => {
-        return <p>{like.likes}</p>
+        return (
+          <DisplayTop5 name={ like.name} likes={ like.likes}/>
+        )
       })}
     </div>
   );
