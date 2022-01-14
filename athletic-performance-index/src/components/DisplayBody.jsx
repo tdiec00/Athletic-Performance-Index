@@ -65,11 +65,11 @@ const DisplayBody = () => {
       <StyledTop5AndListContainer>
         <SortLikes api={name} name={nameID} toggle={ toggle}/>
         <StyledBodyPartPageContainer>
-          {exercises.map((exercise) => {
+          {exercises.map((exercise, index) => {
             return (
-              <StyledBodyPartNameContainer>
+              <StyledBodyPartNameContainer key={index}>
                 <StyledDataLink to={`/${nameID}/${exercise?.id}`}>
-                  <p key={exercise.id}>{exercise.fields?.name}</p>
+                  <p>{exercise.fields?.name}</p>
                 </StyledDataLink>
                 <IncrementLikes
                   id={exercise.id}
@@ -77,8 +77,7 @@ const DisplayBody = () => {
                   name={name}
                   setToggle={setToggle}
                 />
-                <p key={exercise.id}>{exercise.fields?.likes}</p>
-              
+                <p >{exercise.fields?.likes}</p>
               </StyledBodyPartNameContainer>
             );
           })}

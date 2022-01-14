@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { StyledTop5Container } from "./styles/Top5Container.styled";
-import { StyledTop5TextContainer } from "./styles/Top5TextContainer.styled";
 import DisplayTop5 from "./DisplayTop5";
 
 const SortLikes = ({ api, name, toggle }) => {
@@ -46,9 +45,10 @@ const SortLikes = ({ api, name, toggle }) => {
  
     <StyledTop5Container>
       <h3>{`Top 5 liked ${name} exercises`}</h3>
-      {finalLikeArr.map((like) => {
+      {finalLikeArr.map((like, index) => {
         return (
           <DisplayTop5
+            key={index}
             name={like.name}
             likes={like.likes}
           />
