@@ -16,10 +16,11 @@ const SortLikes = ({ api, name, toggle }) => {
       setLikes(res.data.records)
     }
     fetchLikes();
+    //eslint-disable-next-line
   }, [toggle]);
 
   const sortLikes = () => {
-    likes.map((like) => {
+    likes.forEach((like) => {
       likeArr.push({
         name: like.fields.name,
         likes: like.fields.likes,

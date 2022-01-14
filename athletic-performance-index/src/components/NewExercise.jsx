@@ -58,7 +58,7 @@ const NewExercise = () => {
       alert("Please choose a body part");
     }
     const fields = input;
-    const res = await api.post("/", { fields });
+    await api.post("/", { fields });
     setInput(default_input);
   }
 
