@@ -26,6 +26,7 @@ padding-top: 5px;
 
 p{
   margin-left: 15px;
+  padding-right: 10px;
 }
 
 

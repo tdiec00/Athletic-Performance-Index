@@ -17,7 +17,7 @@ const SortLikes = ({ api, name, toggle }) => {
     }
     fetchLikes();
     //eslint-disable-next-line
-  }, [toggle]);
+  }, [toggle, name]);
 
   const sortLikes = () => {
     likes.forEach((like) => {
