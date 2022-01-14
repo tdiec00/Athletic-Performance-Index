@@ -12,7 +12,7 @@ import { StyledH1BodyContainer } from './styles/H1BodyContainer.styled';
 import { StyledBodyPartNameContainer } from './styles/BodyPartNameContainer.styled';
 import IncrementLikes from './IncrementLikes';
 import SortLikes from './SortLikes';
-
+import { StyledTop5AndListContainer } from './styles/Top5AndListContainer.styled';
 
 const DisplayBody = () => {
   const [exercises, setExercises] = useState([]);
@@ -62,26 +62,28 @@ const DisplayBody = () => {
       <StyledH1BodyContainer>
         <h1>{`${nameH1} Index`}</h1>
       </StyledH1BodyContainer>
-      <StyledBodyPartPageContainer>
-        {exercises.map((exercise) => {
-          return (
-            <StyledBodyPartNameContainer>
-              <StyledDataLink to={`/${nameID}/${exercise?.id}`}>
-                <p key={exercise.id}>{exercise.fields?.name}</p>
-              </StyledDataLink>
-              <IncrementLikes
-                id={exercise.id}
-                like={exercise.fields?.likes}
-                name={name}
-                setToggle={setToggle}
-              />
-              <p key={exercise.id}>{exercise.fields?.likes}</p>
+      <StyledTop5AndListContainer>
+        <SortLikes api={name} name={nameID} />
+        <StyledBodyPartPageContainer>
+          {exercises.map((exercise) => {
+            return (
+              <StyledBodyPartNameContainer>
+                <StyledDataLink to={`/${nameID}/${exercise?.id}`}>
+                  <p key={exercise.id}>{exercise.fields?.name}</p>
+                </StyledDataLink>
+                <IncrementLikes
+                  id={exercise.id}
+                  like={exercise.fields?.likes}
+                  name={name}
+                  setToggle={setToggle}
+                />
+                <p key={exercise.id}>{exercise.fields?.likes}</p>
               
-            </StyledBodyPartNameContainer>
-          );
-        })}
-      </StyledBodyPartPageContainer>
-      <SortLikes api={name} name={nameID}/>
+              </StyledBodyPartNameContainer>
+            );
+          })}
+        </StyledBodyPartPageContainer>
+      </StyledTop5AndListContainer>
     </div>
   );
 };

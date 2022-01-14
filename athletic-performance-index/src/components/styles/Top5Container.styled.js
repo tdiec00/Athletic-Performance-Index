@@ -8,4 +8,6 @@ border: 2px solid black;
 width: 300px;
 border-radius: 10px;
 box-shadow: 5px 5px;
+position: absolute;
+margin-left: 15px;
 `

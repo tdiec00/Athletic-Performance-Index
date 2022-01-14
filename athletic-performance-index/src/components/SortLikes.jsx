@@ -42,10 +42,13 @@ const SortLikes = ({ api, name }) => {
   return (
  
     <StyledTop5Container>
-      <h3>{`Top 5 liked ${name} exercises` }</h3>
+      <h3>{`Top 5 liked ${name} exercises`}</h3>
       {finalLikeArr.map((like) => {
         return (
-          <DisplayTop5 name={like.name} likes={like.likes} />
+          <DisplayTop5
+            name={like.name}
+            likes={like.likes}
+          />
         )
       })}
     </StyledTop5Container>
