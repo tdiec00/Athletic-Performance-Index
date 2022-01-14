@@ -1,42 +1,55 @@
-import { useState, useEffect } from "react"
-import DisplayTopLikes from "./DisplayTopLikes";
+import { useState, useEffect } from "react";
+import DiplayTop5 from "./DiplayTop5";
 
 
-const SortLikes = ({ name }) => {
-  const [likes, setLikes] = useState([]); 
+const SortLikes = ({ api }) => {
+  const [likes, setLikes] = useState([]);
+
   let likeArr = [];
   let sortedLikeArr = [];
   let finalLikeArr = [];
 
   useEffect(() => {
     const fetchLikes = async () => {
-      let res = await name.get();
+      let res = await api.get();
       setLikes(res.data.records)
     }
     fetchLikes();
-  }, [name]);
+  }, [api]);
+
+
+   
+
 
   const sortLikes = () => {
     likes.map((like) => {
-      likeArr.push(like.fields.likes)
+      likeArr.push({
+        name: like.fields.name,
+        likes: like.fields.likes,
+      });
     });
   };
   sortLikes();
 
+  /// Sort in numerical order in new array
   const sortedLikes = () => {
-     return sortedLikeArr = likeArr.sort((a, b) => a - b);
+    return sortedLikeArr = likeArr.sort((a, b) => b.likes - a.likes);
   }
   sortedLikes(likeArr);
 
+  /// Top 5 like array
   const top5Likes = () => {
     finalLikeArr = sortedLikeArr.slice(0, 5);
   }
   top5Likes(sortedLikeArr);
+  console.log(finalLikeArr);
 
   return (
-    finalLikeArr.map((like) => {
-      <DisplayTopLikes like={like} />
-    })
+    <div>
+      {finalLikeArr.map((like) => {
+        return <p>{like.likes}</p>
+      })}
+    </div>
   );
 };
 

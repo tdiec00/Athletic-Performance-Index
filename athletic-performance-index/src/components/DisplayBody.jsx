@@ -13,6 +13,7 @@ import { StyledBodyPartNameContainer } from './styles/BodyPartNameContainer.styl
 import IncrementLikes from './IncrementLikes';
 import SortLikes from './SortLikes';
 
+
 const DisplayBody = () => {
   const [exercises, setExercises] = useState([]);
   const [toggle, setToggle] = useState(false);
@@ -75,11 +76,12 @@ const DisplayBody = () => {
                 setToggle={setToggle}
               />
               <p key={exercise.id}>{exercise.fields?.likes}</p>
+              
             </StyledBodyPartNameContainer>
-          )
+          );
         })}
       </StyledBodyPartPageContainer>
-      <SortLikes name={name}/>
+      <SortLikes api={name}/>
     </div>
   );
 };
