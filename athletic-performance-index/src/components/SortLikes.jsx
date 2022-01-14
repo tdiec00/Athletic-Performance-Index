@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import DisplayTop5 from "./DisplayTop5";
 import { StyledTop5Container } from "./styles/Top5Container.styled";
+import { StyledTop5TextContainer } from "./styles/Top5TextContainer.styled";
+import DisplayTop5 from "./DisplayTop5";
 
-const SortLikes = ({ api, name }) => {
+const SortLikes = ({ api, name, toggle }) => {
   const [likes, setLikes] = useState([]);
+ 
 
   let likeArr = [];
   let sortedLikeArr = [];
@@ -15,7 +17,7 @@ const SortLikes = ({ api, name }) => {
       setLikes(res.data.records)
     }
     fetchLikes();
-  }, [api]);
+  }, [toggle]);
 
   const sortLikes = () => {
     likes.map((like) => {
@@ -38,6 +40,7 @@ const SortLikes = ({ api, name }) => {
     finalLikeArr = sortedLikeArr.slice(0, 5);
   }
   top5Likes(sortedLikeArr);
+  console.log(likes);
 
   return (
  

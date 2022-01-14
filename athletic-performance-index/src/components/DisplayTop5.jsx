@@ -1,6 +1,5 @@
 import { FcLike } from "react-icons/fc";
 import { StyledTop5TextContainer } from "./styles/Top5TextContainer.styled";
-import { StyledTop5Container } from "./styles/Top5Container.styled";
 
 const DisplayTop5 = ({likes, name}) => {
   return (

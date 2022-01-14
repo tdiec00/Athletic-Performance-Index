@@ -63,7 +63,7 @@ const DisplayBody = () => {
         <h1>{`${nameH1} Index`}</h1>
       </StyledH1BodyContainer>
       <StyledTop5AndListContainer>
-        <SortLikes api={name} name={nameID} />
+        <SortLikes api={name} name={nameID} toggle={ toggle}/>
         <StyledBodyPartPageContainer>
           {exercises.map((exercise) => {
             return (
