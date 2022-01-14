@@ -81,7 +81,7 @@ const DisplayBody = () => {
           );
         })}
       </StyledBodyPartPageContainer>
-      <SortLikes api={name}/>
+      <SortLikes api={name} name={nameID}/>
     </div>
   );
 };

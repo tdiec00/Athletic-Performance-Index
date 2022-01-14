@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import DisplayTop5 from "./DisplayTop5";
+import { StyledTop5Container } from "./styles/Top5Container.styled";
 
-
-const SortLikes = ({ api }) => {
+const SortLikes = ({ api, name }) => {
   const [likes, setLikes] = useState([]);
 
   let likeArr = [];
@@ -40,13 +40,15 @@ const SortLikes = ({ api }) => {
   top5Likes(sortedLikeArr);
 
   return (
-    <div>
+ 
+    <StyledTop5Container>
+      <h3>{`Top 5 liked ${name} exercises` }</h3>
       {finalLikeArr.map((like) => {
         return (
-          <DisplayTop5 name={ like.name} likes={ like.likes}/>
+          <DisplayTop5 name={like.name} likes={like.likes} />
         )
       })}
-    </div>
+    </StyledTop5Container>
   );
 };
 
