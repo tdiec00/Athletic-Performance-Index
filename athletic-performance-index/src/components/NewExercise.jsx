@@ -34,8 +34,6 @@ const NewExercise = () => {
 
   }
    
- 
-  console.log(bodyPart.bodyPart);
   const handleInput = (event) => {
     event.preventDefault();
     const { id, value } = event.target;

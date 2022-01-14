@@ -6,6 +6,8 @@ import chestApi from '../services/apiConfig/chest';
 import legsApi from '../services/apiConfig/legs';
 import shouldersApi from '../services/apiConfig/shoulders';
 import tricepsApi from '../services/apiConfig/triceps';
+import { StyledDescriptionImage } from "./styles/DescriptionImage.styled";
+import { StyledDescriptionTextContainer } from "./styles/DescriptionTextContainer.styled";
 
 const DisplayDescription = () => {
   const [exerciseData, setExerciseData] = useState({});
@@ -36,11 +38,16 @@ const DisplayDescription = () => {
 
 
   return (
-    <div>
-      <p>{exerciseData.fields?.name}</p>
-      <p>{exerciseData.fields?.description}</p>
-    </div>
-  )
+    <>
+      <div>
+        <StyledDescriptionTextContainer>
+          <p>{exerciseData.fields?.name}</p>
+          <p>{exerciseData.fields?.description}</p>
+        </StyledDescriptionTextContainer>
+      </div>
+        <StyledDescriptionImage></StyledDescriptionImage>
+    </>
+  );
 };
 
 export default DisplayDescription

@@ -6,6 +6,7 @@ background-color: #181818;
 
 &:hover{
   transform: scale(1.15);
+  color:  rgb(216, 202, 6);
 }
 
 

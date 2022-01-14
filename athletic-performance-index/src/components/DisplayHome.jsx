@@ -2,8 +2,7 @@ import { StyledHomeLink } from './styles/HomeLink.styled';
 import { StyledBodyPartContainer } from './styles/BodyPartContainer.styled';
 import { StyleHomeContainer } from './styles/HomeContainer.styled';
 import { StyledH2Container } from './styles/H2Container.styled';
-import SortLikes from './SortLikes';
-import { StyledBicepBackground } from './styles/BicepBackround.styled';
+
 const DisplayHome = () => {
   return (
     <>
@@ -13,9 +12,6 @@ const DisplayHome = () => {
       <StyleHomeContainer>
         <StyledBodyPartContainer>
         <StyledHomeLink to="/biceps">Biceps Exercises</StyledHomeLink>
-          <StyledBicepBackground>
-            
-          </StyledBicepBackground>
         </StyledBodyPartContainer>
         <br />
         <StyledBodyPartContainer>
