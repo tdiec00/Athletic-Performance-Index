@@ -6,7 +6,7 @@ color: white;
 text-decoration: none;
 
 
-@media (min-width: 850px){
+@media (min-width: 750px){
 padding: 20px;
 }
 `

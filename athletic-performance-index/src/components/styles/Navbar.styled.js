@@ -7,7 +7,7 @@ h1{
   font-size: 100px;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 750px) {
 display: flex;
 font-size: 20px;
 width: 100vw;

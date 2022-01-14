@@ -7,8 +7,9 @@ justify-content: space-around;
 flex-wrap: wrap;
 
 @media (max-width: 850px){
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+display: flex;
+flex-direction: column;
+align-content: center;
+margin-top: 50px;
 }
 `

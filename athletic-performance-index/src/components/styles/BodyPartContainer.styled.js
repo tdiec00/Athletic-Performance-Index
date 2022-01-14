@@ -24,4 +24,9 @@ a{
 &:hover{
   transform: scale(1.5);
 }
+
+@media (max-width: 500px){
+  max-width: 90vw;
+}
+
 `
