@@ -9,6 +9,6 @@ width: 300px;
 border-radius: 10px;
 box-shadow: 5px 5px;
 margin-left: 15px;
-height: 350px;
+height: 400px;
 align-items: center;
 `
