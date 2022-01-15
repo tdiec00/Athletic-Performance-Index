@@ -12,6 +12,6 @@ margin-top: -20px;
   flex-wrap: nowrap;
   margin-top: 15px;
   justify-content: center;
-  margin-right: -7px;
+  margin-right: -2px;
 }
 `
