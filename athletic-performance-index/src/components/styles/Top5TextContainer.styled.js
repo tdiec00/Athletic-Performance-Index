@@ -29,6 +29,8 @@ p{
   padding-right: 10px;
 }
 
-
+@media (max-width: 500px){
+  margin-top: -10px;
+}
 
 `
