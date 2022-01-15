@@ -4,12 +4,11 @@ export const StyledNavbarMobile = styled.div`
 background-color: #181818;
 display: none;
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 display: flex;
 align-items: center;
 height: 60px;
 padding: 10px;
-
 
 p {
   color: white;

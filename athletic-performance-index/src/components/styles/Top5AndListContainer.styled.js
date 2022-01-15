@@ -8,6 +8,5 @@ margin: auto;
 @media (max-width: 850px){
   flex-direction: column;
   align-items: center;
- 
 }
 `
