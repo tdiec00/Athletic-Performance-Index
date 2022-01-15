@@ -48,6 +48,6 @@ const MobileNavigation = () => {
       {open && <NavigationLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
     </nav>
   );
-}
+};
 
 export default MobileNavigation

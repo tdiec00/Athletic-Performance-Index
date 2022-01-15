@@ -48,7 +48,6 @@ const DisplayBody = () => {
     nameH1 = "Triceps"
   } else { };
 
-  
   useEffect(() => {
     const fetchExercises = async () => {
       let res = await name.get();

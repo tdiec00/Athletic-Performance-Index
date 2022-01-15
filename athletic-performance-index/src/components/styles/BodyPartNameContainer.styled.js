@@ -34,8 +34,12 @@ svg{
 }
 
 p{
+display: flex;
 margin-left: 10px;
+padding-right: 10px;
+align-items: center;  
 }
+
 a{
   display: flex;
   justify-content: center;

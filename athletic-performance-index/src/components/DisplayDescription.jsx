@@ -36,7 +36,6 @@ const DisplayDescription = () => {
     fetchExercises()
   }, [name, id]);
 
-
   return (
     <>
       <div>

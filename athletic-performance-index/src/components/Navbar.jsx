@@ -1,13 +1,13 @@
 import MobileNavigation from "./MobileNavigation";
-import Navigation from "./Navigation";
 import { StyledNavbarMobile } from "./styles/NavbarMobile.styled";
 import { StyledNavbar } from "./styles/Navbar.styled";
+import NavigationLinks from "./NavigationLinks";
 
 const Navbar = () => {
   return (
     <>
       <StyledNavbar>
-        <Navigation />
+        <NavigationLinks />
       </StyledNavbar>
       <StyledNavbarMobile>
         <MobileNavigation />
