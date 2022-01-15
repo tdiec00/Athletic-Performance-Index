@@ -27,6 +27,10 @@ a{
 
 @media (max-width: 500px){
   max-width: 90vw;
+
+  &:hover{
+  transform: none;
+}
 }
 
 `

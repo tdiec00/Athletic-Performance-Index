@@ -46,4 +46,10 @@ a{
   align-items: center;
   width: 200px;
 }
+
+@media (max-width: 500px){
+  &:hover{
+  transform: none;
+}
+}
 `
