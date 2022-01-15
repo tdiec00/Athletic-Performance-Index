@@ -22,7 +22,7 @@ a{
 }
 
 &:hover{
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 @media (max-width: 500px){

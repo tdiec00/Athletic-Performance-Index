@@ -14,7 +14,7 @@ display: flex;
 justify-content: flex-start;
 
 &:hover{
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 form{
