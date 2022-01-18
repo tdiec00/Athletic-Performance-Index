@@ -130,15 +130,15 @@ This schedule will be used to keep track of your progress throughout the week an
 | Routes for each bodypart | H | 2hrs| 2.5hrs |  |
 | Fetching for each body part | H | 4hrs| 2hrs |  |
 | Display for each body part | H | 4hrs| 3hrs |  |
-| Styling for each body part page | H | 4hrs| 5hrs |  |
+| Styling for each body part page | H | 4hrs| 7hrs |  |
 | Add new exercise button| H | 2hrs| 1.5hrs |  |
 | Form for new exercise| H | 3hrs| 4hrs |  |
 | Styling for new exercise form| H | 3hrs| 4hrs |  |
-| Likes button| H | 3hrs| 2hrs |  |
+| Likes button| H | 3hrs| 5hrs |  |
 | Increment likes component| H | 3hrs| 6.5hrs |  |
 |Top 5 display for each body part| L | 4hrs| 3hrs |  |
-|Style top 5 display| L | 4hrs| 5hrs |  |
-| Total | H | 49hrs|  | |
+|Style top 5 display| L | 4hrs| 7hrs |  |
+| Total | H | 49hrs|  57hrs| |
 
 ## SWOT Analysis
 
