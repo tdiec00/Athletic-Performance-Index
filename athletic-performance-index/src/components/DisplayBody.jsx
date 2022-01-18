@@ -52,7 +52,7 @@ const DisplayBody = () => {
     const fetchExercises = async () => {
       let res = await name.get();
       setExercises(res.data.records)
-    }
+    };
     fetchExercises()
   }, [name, toggle]);
 
