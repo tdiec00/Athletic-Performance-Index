@@ -11,7 +11,7 @@ const IncrementLikes = ({ id, like, name, setToggle }) => {
   }
   
   return (
-    <button onClick={updateLikes}>
+    <button onClick={updateLikes} title={`Like this exercise`}>
       <FcLike />
     </button>
   );

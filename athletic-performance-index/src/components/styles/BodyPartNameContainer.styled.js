@@ -24,6 +24,9 @@ form{
 button{
   background-color: white;
   border: white;
+  height: 50px;
+  margin: auto 0;
+  width: 40px;
 }
 
 svg{
@@ -33,9 +36,14 @@ svg{
  margin-left: 10px;
 }
 
+button:hover{
+transform: scale(1.3);
+cursor: pointer;
+}
+
 p{
 display: flex;
-margin-left: 10px;
+margin-left: 25px;
 padding-right: 10px;
 align-items: center;  
 }
