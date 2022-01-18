@@ -19,7 +19,7 @@ const DisplayBody = () => {
   const [toggle, setToggle] = useState(false);
 
   let { name } = useParams();
-  let nameID = ""
+  let nameID = "";
   let nameH1 = "";
   
   if (name === "back") {
@@ -62,7 +62,7 @@ const DisplayBody = () => {
         <h1>{`${nameH1} Index`}</h1>
       </StyledH1BodyContainer>
       <StyledTop5AndListContainer>
-        <SortLikes api={name} name={nameID} toggle={ toggle}/>
+        <SortLikes api={name} name={nameID} toggle={toggle} />
         <StyledBodyPartPageContainer>
           {exercises.map((exercise, index) => {
             return (

@@ -123,22 +123,21 @@ This schedule will be used to keep track of your progress throughout the week an
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Navbar Routes | H | 1hr|  |  |
-| Fetching homepage data | H | 2hr| | |
-| Display homepage data | H | 2hrs|  |  |
-| Styling for homepage | H | 4hrs|  |  |
-| Routes for each bodypart | H | 2hrs|  |  |
-| Fetching for each body part | H | 4hrs|  |  |
-| Display for each body part | H | 4hrs|  |  |
-| Styling for each body part page | H | 4hrs|  |  |
-| Add new exercise button| H | 2hrs|  |  |
-| Form for new exercise| H | 3hrs|  |  |
-| Styling for new exercise form| H | 3hrs|  |  |
-| Likes button| H | 3hrs|  |  |
-| Increment likes component| H | 3hrs|  |  |
-|Top 5 display for each body part| L | 4hrs|  |  |
-|Top 5 display for home page| L | 4hrs|  |  |
-|Style top 5 display| L | 4hrs|  |  |
+| Navbar Routes | H | 1hr| 1hr |  |
+| Fetching homepage data | H | 2hrs| 1.5hrs | |
+| Display homepage data | H | 2hrs| 4hrs |  |
+| Styling for homepage | H | 4hrs| 5hrs |  |
+| Routes for each bodypart | H | 2hrs| 2.5hrs |  |
+| Fetching for each body part | H | 4hrs| 2hrs |  |
+| Display for each body part | H | 4hrs| 3hrs |  |
+| Styling for each body part page | H | 4hrs| 5hrs |  |
+| Add new exercise button| H | 2hrs| 1.5hrs |  |
+| Form for new exercise| H | 3hrs| 4hrs |  |
+| Styling for new exercise form| H | 3hrs| 4hrs |  |
+| Likes button| H | 3hrs| 2hrs |  |
+| Increment likes component| H | 3hrs| 6.5hrs |  |
+|Top 5 display for each body part| L | 4hrs| 3hrs |  |
+|Style top 5 display| L | 4hrs| 5hrs |  |
 | Total | H | 49hrs|  | |
 
 ## SWOT Analysis

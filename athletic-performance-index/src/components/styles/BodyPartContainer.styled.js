@@ -8,7 +8,7 @@ width: 300px;
 border-radius: 10px;
 text-align: center;
 background-color: white;
-box-shadow: 10px 10px black ;
+box-shadow: 10px 10px black;
 background-image: url(${img});
 background-position: center;
 display: flex;
@@ -32,5 +32,4 @@ a{
   transform: none;
 }
 }
-
 `
